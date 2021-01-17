@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase CRUD</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="card">
+          <div class="card-body">
+            <form id="taskForm">
+              <div class="form-group">
+                <input type="text" id="taskTitle" class="form-control" placeholder="Task Title" autofocus>
+              </div>
+            
+            
+              <div class="form-group">
+                <textarea id="taskDescription" rows="3" class="form-control" placeholder="Task Description"></textarea>
+              </div>
+              <button class="btn btn-primary" id="btnTaskForm">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="taskContainer">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAOAa-Z6_YsnXPiSfttyjEhsCCpunbqPZA",
+      authDomain: "crudfirebase-e5989.firebaseapp.com",
+      projectId: "crudfirebase-e5989",
+      storageBucket: "crudfirebase-e5989.appspot.com",
+      messagingSenderId: "832953879864",
+      appId: "1:832953879864:web:7d357010dd2c822b3ac5cd"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
